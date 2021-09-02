@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    // vetor indeterminado - unidimensional
+
+    var nome 
+    // Vetor
+    var dados = []
+
+    // Laço
+
+    do{
+// obter um nome
+        nome = prompt("informe um nome")
+// Adcionar ao vetor caso seja ind=formado um nome
+
+    if (nome!= ""){
+        dados.push(nome)
+    }
+    }while (nome != "")
+    //document.write(dados) exibe "feio"
+
+    // Listas de nome
+    for( var i = 0; i<dados.length; i++){
+        document.write ((i+1)+"º nome é: "+dados[i]+ "<br>")
+    }
+// (i+1) esse + 1 é so para exibir o "1º" 
+//.push para cadastrar a nova informação na posição seguinte.
+
+// cosole (para testar se as informaçoes estao sendo guardadas.)
+//console.log(dados)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
