@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*3. Crie um sistema de votação, haverá dois candidatos (Bruno e Carla), cada um deles terá um botão. 
+Sempre q clicado, deverá exibir a quantidade de votos de cada um, além do percentual e o candidato que está ganhando (ou estão empatados).*/
+       
+
+var bruno=0 , carla=0
+
+var candidatos = "Escolha seu candidado: \n 1- Bruno\n 2- Carla \n 0- Finalizar"
+
+var votos = 0
+
+function votoBruno() {
+    bruno+=1
+    votos += 1
+
+
+    document.getElementById("exibir").innerHTML = "Bruno obteve "+bruno+" votos<br>"
+    document.getElementById("exibir").innerHTML += "Carla obteve "+carla+" votos<br>"
+    document.getElementById("exibir").innerHTML +="<hr>"
+    document.getElementById("exibir").innerHTML +="Bruno obteve "+(100/votos*bruno)+"% dos votos<br>"
+    document.getElementById("exibir").innerHTML +="Carla obteve "+(100/votos*carla)+"% dos votos<br>"
+
+}
+function votosCarla() {
+    carla+=1
+    votos += 1
+
+    
+    document.getElementById("exibir").innerHTML = "Bruno obteve "+bruno+" votos<br>"
+    document.getElementById("exibir").innerHTML += "Carla obteve "+carla+" votos<br>"
+    document.getElementById("exibir").innerHTML +="<hr>"
+    document.getElementById("exibir").innerHTML +="Bruno obteve "+(100/votos*bruno)+"% dos votos<br>"
+    document.getElementById("exibir").innerHTML +="Carla obteve "+(100/votos*carla)+"% dos votos<br>"
+}
+
+
+    </script>
+</head>
+<body>
+    <p id="exibir"></p>
+
+    <input type="button" value = "Bruno" onclick ="votoBruno()">
+    <input type="button" value = "Carla" onclick = "votosCarla()">
+</body>
+</html>

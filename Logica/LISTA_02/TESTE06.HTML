@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+/*6. Crie um sistema para votar em qual cidade o indivíduo está morando, as opções serão: Blumenau, Pomerode, Gaspar, Timbó, Indaial e Finalizar.
+ Ao término, informe a quantidade de votos para cada cidade, além de seu respectivo percentual.*/
+
+ 
+
+
+
+var blumenau = 0, pomerode = 0, gaspar = 0, timbo = 0, indaial = 0, finalizar = 0
+
+var votos
+
+var cidades = "Escolha sua cidade: \n1- Blumenau \n2- Pomerode \n3- Gaspar \n4- Indaial\n 5- Para finaizar"
+
+do{
+    votos = prompt(cidades)
+   switch(votos){
+
+    case "1":
+    blumenau++  
+    break
+
+    case "2": 
+    pomerode++
+    break
+
+    case "3": 
+    gaspar++
+    break
+
+    case "4":   
+    indaial++
+    break
+
+    case "5":
+    alert("Votação finalizada com sucesso!")     
+    break
+    default:
+    alert("Opção inválida.")
+}
+
+}while (votos != 5)
+
+ document.write("Blumenau obteve "+ blumenau+ " voto(s) <br>")
+ document.write("Pomerode obteve "+ pomerode+ " voto(s) <br>")
+ document.write("Gaspar obteve "+ gaspar+ " voto(s) <br>")
+ document.write("Timbó obteve "+ indaial+ " voto(s) <br>")
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
