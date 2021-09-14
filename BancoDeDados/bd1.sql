@@ -36,7 +36,7 @@ insert into usuarios (nome, email) values ("Rebeca", "rebeca@gmail.com");
 -- Iserir varias informaçoes de uma vez
 
 insert into usuarios values
--- Se algum usiario nao tem informação pode colocar null para preencher o campo
+-- Se algum usuario nao tem informação pode colocar null para preencher o campo
 ("Ana", 16, "ana@gmail.com"),
 ("Rubens", 24, "rubens@gmail.com"),
 ("Francielle", 34, "francielle@gmail.com"),

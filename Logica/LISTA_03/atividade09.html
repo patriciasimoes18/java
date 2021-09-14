@@ -8,10 +8,39 @@
     <script>
 //9. Implemente um sistema, onde o usuário informa a temperatura e o tipo de conversão (Celsius para Fahrenheit ou Fahrenheit para Celsius).
 
+     function converter() {
 
-    </script>
+      var temperatura = parseFloat(document.getElementById("temperatura").value)
+      var conversao = parseInt(document.getElementById("conversao").value)
+
+     switch(conversao){
+
+        case 1:
+        document.getElementById("exibir").innerHTML = ((temperatura * 1.8)+32)
+        break
+
+        case 2:
+        document.getElementById("exibir").innerHTML = ((temperatura - 32)/1.8)
+
+    }
+    }
+
+ </script>
 </head>
 <body>
+
+    <input type="number" id= "temperatura">
+
+    <select  id="conversao">
+
+    <option value="0">Qual conversão deseja fazer?</option>
+    <option value="1">Celsius para Fahrenheit</option>
+    <option value="2">Fahrenheit para Celsius</option>
+</select>
+    
+    <button onclick="converter()">Converter</button>
+
+    <p id ="exibir"></p>
     
 </body>
 </html>
