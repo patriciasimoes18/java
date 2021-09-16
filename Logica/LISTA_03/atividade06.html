@@ -12,7 +12,7 @@ Em caso de pagamento a vista e valor da compra acima de R$100,00, será dado um 
 function verificar() {
 
  var valor = document.getElementById("valor").value
- var formaDePagamento = parseInt( document.getElementById("formaDePagamento")).value
+ var formaDePagamento = parseInt( document.getElementById("formaDePagamento").value)
 
 if (formaDePagamento == "1"){
     document.getElementById("exibir").innerHTML= valor*0.9
