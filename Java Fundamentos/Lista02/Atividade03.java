@@ -14,14 +14,24 @@ import javax.swing.JOptionPane;
 public class Atividade03 {
     public static void main(String[] args) {
         
+        int resultado =0;
+
         int numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um valor"));
 
-        int antecessor = numero -1; //4
-        int resultado = numero * antecessor; // 5-4
-        int result = resultado * antecessor;
-        antecessor--;
+        for(int i=numero-1; i>0; i--){
+            if(i==numero-1){
+                resultado = numero *i;
+                System.out.println(numero+"x"+i+"="+ resultado);
+            }else{
+                System.out.println(resultado+"x"+i+"="+(resultado*i));
 
-        JOptionPane.showMessageDialog(null, result);
+                resultado= resultado*i;
+
+            }
+
+
+        }
+
 
 
 

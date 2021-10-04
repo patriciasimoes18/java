@@ -8,12 +8,16 @@ import javax.swing.JOptionPane;
 
 public class Atividade11 {
     public static void main(String[] args) {
-        int l1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a primeira medida"));
-        int l2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a segunda medida"));
-        int l3 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a terceira medida"));
+        int lDireito = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a medida do lado direito"));
+        int lEsquerdo = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe medida do lado esquerdo"));
+        int lBaixo = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a medida de baixo"));
 
-        // if(l1 == l2 (l1!=l3)){
-
-        // }
-    }
+       if(lDireito!=lEsquerdo && lEsquerdo!= lBaixo && lBaixo != lDireito){
+           JOptionPane.showMessageDialog(null, "Triângulo escaleno");
+       }else if(lDireito==lEsquerdo && lEsquerdo==lBaixo && lBaixo==lDireito){
+        JOptionPane.showMessageDialog(null, "Triângulo Equilátero");
+       }else{
+        JOptionPane.showMessageDialog(null, "Triângulo Isósceles");
+       }
+}
 }
