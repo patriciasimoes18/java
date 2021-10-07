@@ -14,7 +14,7 @@ public class Atividade11 {
 
        if(lDireito!=lEsquerdo && lEsquerdo!= lBaixo && lBaixo != lDireito){
            JOptionPane.showMessageDialog(null, "Triângulo escaleno");
-       }else if(lDireito==lEsquerdo && lEsquerdo==lBaixo && lBaixo==lDireito){
+       }else if(lDireito==lEsquerdo && lEsquerdo==lBaixo){
         JOptionPane.showMessageDialog(null, "Triângulo Equilátero");
        }else{
         JOptionPane.showMessageDialog(null, "Triângulo Isósceles");

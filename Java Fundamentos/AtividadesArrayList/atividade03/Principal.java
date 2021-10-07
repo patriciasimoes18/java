@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+/*Criar um sistema para cadastrar, selecionar e remover produtos. 
+Crie uma classe chamada Produto com os atributos nome, marca e valor. */
+
 public class Principal {
     public static void main(String[] args) {
         
