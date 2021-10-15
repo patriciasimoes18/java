@@ -1,6 +1,22 @@
 package AtividadeOO.ex01;
 
 import javax.swing.JOptionPane;
+/**Criar uma classe chamada Produto com a seguinte estrutura:
+
+    // Atributos
+    nome, valor, formaPagamento
+
+    // Métodos
+    Construtor
+    obterDados:void
+    calculo:double
+    mensagem:string
+
+Método obterDados: Pedir nome, valor e forma de pagamento.
+
+Método calculo: Retornar o valor do produto, caso o valor da compra seja de R$500,00 ou superior e a forma de pagamento for a vista, retorne o valor com 10% de desconto, caso contrário será pago integralmente.
+
+Método mensagem: Crie uma frase, concatenando o nome do produto e o valor a ser pago. */
 
 public class Produto {
     private String nome;

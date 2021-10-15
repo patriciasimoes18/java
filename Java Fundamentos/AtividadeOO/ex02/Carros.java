@@ -1,6 +1,19 @@
 package AtividadeOO.ex02;
-
 import javax.swing.JOptionPane;
+
+/* Criar uma classe chamada Carro com a seguinte estrutura:
+
+    // Atributos
+    modelo, valor
+
+    // Métodos
+    Construtor
+    impostos:double
+    mensagem:string
+
+Método impostos: Caso o valor do veículo seja até 10.000,00 será cobrado 10% sobre o veículo, entre R$10.000,01 e R$20.000,00 será cobrado 15%, caso contrário 20%.
+
+Método mensagem: Retorne um texto com concatenando o modelo, valor e os impostos cobrados pelo veículo. */
 
 public class Carros {
     private String modelo;
