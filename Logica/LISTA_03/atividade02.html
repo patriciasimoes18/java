@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//2. Crie um campo de texto e um botão. O usuário precisa informar um número, em seguida exiba a tabuada daquele número.
+
+
+var valor = 1
+var calculo 
+function tabuada(){
+    
+    var n = parseInt(document.getElementById("n").value)
+
+    while (valor<11){
+    calculo = (n*valor)
+    document.getElementById("exibir").innerHTML+=calculo+"<br>"
+    valor++
+
+}
+
+  
+}
+
+    </script>
+</head>
+<body>
+
+    <input type="text" placeholder="Digite um número" id="n">
+    <input type="button" value = "Ok" onclick="tabuada()">
+
+    <div id="exibir"></div>
+    
+</body>
+</html>

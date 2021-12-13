@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//2) O usuário informa um número, retorne os 10 números antecessores e os 10 sucessores.
+//Exemplo: Se for informado o número 100, retorne: 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+//105, 106, 107, 108, 109, 110.
+
+var n = parseInt(prompt("Informe um número."))
+
+indiceA = n - 10
+indiceS = n + 10
+
+while (indiceA <= indiceS){
+    document.write(indiceA+ "<br>")
+    indiceA++
+
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

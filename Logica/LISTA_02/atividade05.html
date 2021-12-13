@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*5. Peça diversos números, até que o valor informado seja zero. 
+Informe a soma dos valores informados, além da média e quantos são positivos e negativos.*/
+
+var valor
+var soma = 0
+var media
+var contador = -1 //nao vai contar o 0
+var positivos = 0
+var negativos = 0
+
+while( valor!= 0){
+    contador++
+valor = parseInt(prompt("Informe um número."))
+
+soma+=valor
+
+if(valor < 0){
+    negativos++    
+}
+if(valor > 0){
+    positivos++
+}
+
+}
+document.write("A soma dos valores é " + soma+"<br>")
+document.write("A média dos valores informados é "+soma/contador+"<br>")
+document.write("Negativo(s): "+negativos+"<br>")
+document.write("Positivo(s): "+positivos)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

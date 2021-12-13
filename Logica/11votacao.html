@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Menu
+
+        var menu = "***MENU***\n"
+
+        menu += "1) Ana\n"
+        menu += "2) João\n"
+        menu += "3) Jaqueline\n"
+        menu += "4) Paulo\n"
+        menu += "5) Finalizar votação\n"
+
+        // voto
+        var voto
+        // contadores
+        var ana = 0, joao = 0, jaqueline = 0, paulo = 0
+
+        //Laço
+
+        do{
+            voto = prompt(menu)
+            switch(voto){
+                case "1":
+                    ana++
+                    break
+                case "2": 
+                    joao++
+                    break
+                case "3": 
+                    jaqueline++
+                    break
+                case "4":   
+                    paulo++
+                    break
+                case "5":
+                    alert("Votação finalizada com sucesso!")     
+                    break
+                default:
+                    alert("Opção inválida.")
+
+            }
+
+        }while(voto != 5)
+
+        // Resultado
+
+        document.write("Ana obteve "+ana+" voto(s) <br>")
+        document.write("João obteve "+joao+" voto(s) <br>")
+        document.write("Jaqueline obteve "+jaqueline+" voto(s) <br>")
+        document.write("Paulo obteve "+paulo+" voto(s) <br>")
+
+       // Total dos votos
+       var total =  ana + joao + jaqueline + paulo
+        // percentual
+        
+        var percentualAna = (100/total)* ana
+        var percentualJoao = (100/total)* joao
+        var percentualJaqueline = (100/total)* jaqueline
+        var percentualPaulo = (100/total)* paulo
+
+        //.toFixed para limitar as casas decimais. colocar o numero de casas desejadas (2)
+        document.write("<hr>")
+        document.write("Ana "+percentualAna.toFixed(2)+"%<br>")
+        document.write("João "+percentualJoao.toFixed(2)+"%<br>")
+        document.write("Jaqueline "+ percentualJaqueline.toFixed(2)+"%<br>")
+        document.write("Paulo "+percentualPaulo.toFixed(2)+ "%")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*6. Criar um sistema, onde o usuário informa o total de uma compra e se pagou a vista ou a prazo. 
+Em caso de pagamento a vista e valor da compra acima de R$100,00, será dado um desconto de 10%, caso contrário sem desconto.*/
+
+function verificar() {
+
+ var valor = document.getElementById("valor").value
+ var formaDePagamento = parseInt( document.getElementById("formaDePagamento").value)
+
+if (formaDePagamento == "1"){
+    document.getElementById("exibir").innerHTML= valor*0.9
+}else{
+    document.getElementById("exibir").innerHTML= "Sem desconto"
+}    
+}
+    </script>
+</head>
+<body>
+    <input type="number" placeholder="Valor da compra"  id="valor">
+
+    <select id="formaDePagamento">
+        <option value="0">selecione a forma de pagamento</option>
+        <option value="1">A vista</option>
+        <option value="2">Parcelado</option>
+    </select>
+    
+    <button onclick="verificar()">Verificar</button>
+
+    <p id = "exibir"></p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//5) Criar um sistema pra converter moedas. Informe se a conversão será de Real para Dólar ou Dólar para Real,
+// em seguida informe o valor e retorno a conversão. Vamos usar como base a cotação no valor de R$5,50.
+//Sendo assim, caso seja informado o valor de R$1,00 e a opção dólar para real retornará R$5,50.
+//Outro exemplo, se informado R$5,50 de real para dólar, o retorno será de: US1,00
+
+
+var valor = parseFloat(prompt("Qual valor deseja converter?"))
+var conversao = parseFloat(prompt("IInforme a conversão: \n1 - Dolar para Real \n 2 -  Real para Dolar"))
+
+// calculo
+
+var dolarReal = ((valor) *5.5) 
+var realDolar = (valor / 5.5)
+
+// resposta
+
+if (conversao == 1){
+    document.write("U$"+ valor+" corresponde a R$"+dolarReal)
+}else if (conversao ==2){
+    document.write("R$"+valor+ " corresponde a U$"+realDolar)
+}
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

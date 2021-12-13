@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+// salario
+
+var salario = parseInt(prompt(" Informe o valor do seu salário"))
+
+// gastos
+
+var luz = parseInt (prompt(" Qual o valor da sua conta de luz?"))
+var telefone = parseInt ( prompt("Qual o valor da sua conta de telefone? "))
+var agua = parseInt(prompt("Qual o valor da sua conta de água?"))
+var mercado = parseInt(prompt(" Quais sãp seus gastos com mercado?"))
+var lazer = parseInt(prompt(" Qual seu gasto com lazer?"))
+var aluguel = parseInt(prompt(" Quanto você paga de aluguel?"))
+
+// calculo 
+
+var gastos = (luz + telefone + agua + mercado + lazer + aluguel )
+
+if (salario > gastos){
+    document.write("Sobrou R$" +(salario - gastos) + " do seu salário este mês.")
+
+}else if (gastos > salario){
+    document.write("Você está no vermelho! Tem um saldo negativo de R$"+ (salario - gastos))
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

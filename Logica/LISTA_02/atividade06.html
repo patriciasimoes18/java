@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ /*6. Crie um sistema para votar em qual cidade o indivíduo está morando, as opções serão: Blumenau, Pomerode, Gaspar, Timbó, Indaial e Finalizar.
+ Ao término, informe a quantidade de votos para cada cidade, além de seu respectivo percentual.*/
+
+ var blumenau = 0, pomerode = 0, gaspar = 0, timbo = 0, indaial = 0
+
+ var votos
+
+ var cidades = "Escolha sua cidade:\n"
+
+ cidades += "1- Blumenau\n"
+ cidades += "2- Pomerode\n"
+ cidades += "3- Gaspar\n"
+ cidades += "4- Timbó\n"
+ cidades += "5- Indaial\n"
+ cidades += "6- Finalizar votação\n"
+
+ do{
+     votos = prompt(cidades)
+     switch (votos){
+
+    case "1":
+    blumenau++  
+    break
+
+    case "2": 
+    pomerode++
+    break
+
+    case "3": 
+    gaspar++
+    break
+
+    case "4":   
+    timbo++
+    break
+
+    case "5":
+    indaial++
+    break
+
+    case "6":
+    alert("Votação finalizada.")
+    break
+
+    default:
+    alert("Opção inválida.")
+     }
+ }while (votos != 6)
+
+ document.write("Blumenau obteve "+ blumenau+ " voto(s) <br>")
+ document.write("Pomerode obteve "+ pomerode+ " voto(s) <br>")
+ document.write("Gaspar obteve "+ gaspar+ " voto(s) <br>")
+ document.write("Timbó obteve "+ timbo+ " voto(s) <br>")
+ document.write("Indaial obteve "+ indaial+ " voto(s) <br>")
+
+ var totalVotos = blumenau + pomerode + gaspar + timbo + indaial
+
+ var percentBlume = (100/totalVotos)* blumenau
+ var percentPome = (100/totalVotos)* pomerode
+ var percentGasp = (100/totalVotos)* gaspar
+ var percentTimb = (100/totalVotos)* timbo
+ var percentInda = (100/totalVotos)* indaial
+
+ document.write("<hr>")
+document.write("Blumenau: "+percentBlume+"%<br>")
+document.write("Pomerode: "+percentPome+"%<br>")
+document.write("Gaspar: "+percentGasp+"%<br>")
+document.write("Timbó: "+percentTimb+"%<br>")
+document.write("Indaial: "+percentInda+"%<br>")
+
+
+
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
