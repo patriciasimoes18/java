@@ -1,0 +1,19 @@
+{
+  "produtos": [
+    {
+      "produto": "1",
+      "marca": "2",
+      "valor": "3",
+      "id": 1
+    },
+    {
+      "produto": "Smartphone Galaxy S21",
+      "marca": "Samsung",
+      "valor": 5700,
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ]
+}
